@@ -54,7 +54,7 @@ didChangeSupportedInterfaceOrientations:(UIInterfaceOrientationMask)supportedInt
 }
 
 
-- (void)removeOrientationChangeListener:(NSString *) experienceId
+- (void)removeOrientationChangeListener:(NSString *)experienceId
 {
   [_subscribedModules removeObjectForKey:experienceId];
 }
