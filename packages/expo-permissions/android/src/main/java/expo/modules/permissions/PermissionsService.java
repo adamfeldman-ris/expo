@@ -14,6 +14,8 @@ import expo.core.interfaces.ModuleRegistryConsumer;
 import expo.interfaces.permissions.Permissions;
 import expo.interfaces.permissions.PermissionsListener;
 
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
+
 public class PermissionsService implements InternalModule, ModuleRegistryConsumer, Permissions {
   protected Context mContext;
   private PermissionsRequester mPermissionsRequester;
@@ -72,5 +74,13 @@ public class PermissionsService implements InternalModule, ModuleRegistryConsume
         listener.onPermissionResult(results[0]);
       }
     });
+  }
+
+  @Override
+  public boolean hasPermissions(String[] permissions) {
+    int[] results = getPermissions(permissions);
+    int[] granted = new int[permissions.length];
+    Arrays.fill(granted, PERMISSION_GRANTED);
+    return results.equals(granted);
   }
 }
