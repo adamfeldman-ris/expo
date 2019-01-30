@@ -357,7 +357,7 @@ export function test(t) {
           ScreenOrientation.OrientationLock.LANDSCAPE_RIGHT,
         ];
 
-        for (let lock of acceptedLocks) {
+        for (const lock of acceptedLocks) {
           const supported = await ScreenOrientation.supportsOrientationLockAsync(lock);
           t.expect(supported).toBe(true);
         }
