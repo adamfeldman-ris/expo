@@ -58,7 +58,7 @@ RCT_EXPORT_METHOD(lockAsync:(EXOrientationLock)orientationLock
 }
 
 
-RCT_EXPORT_METHOD(lockPlatformAsync:(NSArray *)allowedOrientations
+RCT_EXPORT_METHOD(lockPlatformAsync:(NSArray<NSString *> *)allowedOrientations
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
