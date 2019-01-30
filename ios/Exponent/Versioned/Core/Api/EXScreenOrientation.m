@@ -290,7 +290,7 @@ RCT_REMAP_METHOD(getOrientationAsync,
   return NO;
 }
 
-- (NSString *) sizeClassToString: (UIUserInterfaceSizeClass) sizeClass
+- (NSString *)stringFromSizeClass:(UIUserInterfaceSizeClass)sizeClass
 {
   if (sizeClass == UIUserInterfaceSizeClassCompact){
     return @"COMPACT";
