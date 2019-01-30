@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, EXOrientation) {
 };
 
 typedef NS_ENUM(NSInteger, EXOrientationLock) {
-  DEFAULT_LOCK,
+  EXOrientationLockDefault,
   ALL_LOCK,
   PORTRAIT_LOCK,
   PORTRAIT_UP_LOCK,
