@@ -38,7 +38,7 @@ const applyAsync = ({ desiredOrientationLock, desiredOrientations, validOrientat
   }
   return new Promise(async function(resolve, reject) {
     let subscriptionCancelled = false;
-    const subscription = ScreenOrientation.addOrientationChangeListener(async update => {
+    const subscription = ScreenOrientation.addOrientationChangeListener(update => {
       const { orientationInfo, orientationLock } = update;
       const { orientation } = orientationInfo;
       if (validOrientations && !validOrientations.includes(orientation)) {
