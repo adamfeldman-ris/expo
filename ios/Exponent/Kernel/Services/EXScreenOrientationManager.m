@@ -40,7 +40,8 @@ NSNotificationName kEXChangeForegroundTaskSupportedOrientationsNotification = @"
   }
 }
 
-- (UITraitCollection *) getTraitCollection{
+- (UITraitCollection *)getTraitCollection
+{
   EXKernelAppRecord *visibleApp = [EXKernel sharedInstance].visibleApp;
   return [visibleApp.viewController traitCollection];
 }
