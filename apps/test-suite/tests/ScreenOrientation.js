@@ -237,7 +237,7 @@ export function test(t) {
         }
       });
 
-      t.it('Apply a native ios lock', async () => {
+      t.it('Apply a native iOS lock', async () => {
         // This test only applies to ios devices
         if (Platform.OS !== 'ios') {
           return;
