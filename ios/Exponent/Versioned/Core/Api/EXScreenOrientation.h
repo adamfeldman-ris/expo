@@ -6,7 +6,7 @@
 #import "EXScopedEventEmitter.h"
 
 typedef NS_ENUM(NSInteger, EXOrientation) {
-    PORTRAIT,
+  EXOrientationPortrait,
     PORTRAIT_UP,
     PORTRAIT_DOWN,
     LANDSCAPE,
