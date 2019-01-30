@@ -13,6 +13,6 @@
 
 - (void) handleScreenOrientationChange:(nullable UITraitCollection *)traitCollection;
 
-- (UITraitCollection *) getTraitCollection;
+- (UITraitCollection *)getTraitCollection;
 
 @end
