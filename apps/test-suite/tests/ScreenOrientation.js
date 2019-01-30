@@ -282,7 +282,7 @@ export function test(t) {
         try {
           // Register for screen orientation changes
           let listenerWasCalled = false;
-          ScreenOrientation.addOrientationChangeListener(async () => {
+          ScreenOrientation.addOrientationChangeListener(() => {
             listenerWasCalled = true;
           });
 
